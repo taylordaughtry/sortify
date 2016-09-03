@@ -1,6 +1,6 @@
 {
   "name": "sortify",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Check your LESS files for alphabetical order.",
   "main": "sortify.js",
   "scripts": {
