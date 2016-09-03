@@ -7,7 +7,7 @@ var Sortify = (function() {
 		lex;
 
 	_initialize = function(filePath) {
-		lex = new Lexer(function(char) {
+		lex = new Lexer(function() {
 			return;
 		});
 
@@ -30,16 +30,14 @@ var Sortify = (function() {
 				return;
 			}
 
-			if (previousMatch) {
-				if (previousMatch > lexeme.toLowerCase()) {
-					offenders.push({
-						row: row - 1,
-						prev: previousMatch,
-						next: lexeme
-					});
+			if (previousMatch && previousMatch > lexeme.toLowerCase()) {
+				offenders.push({
+					row: row - 1,
+					prev: previousMatch,
+					next: lexeme
+				});
 
-					allOkay = false;
-				}
+				allOkay = false;
 			}
 
 			previousMatch = lexeme;
@@ -78,3 +76,5 @@ var Sortify = (function() {
 })();
 
 module.exports = exports = Sortify;
+
+Sortify.init('test.less');
