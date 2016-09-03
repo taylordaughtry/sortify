@@ -76,5 +76,3 @@ var Sortify = (function() {
 })();
 
 module.exports = exports = Sortify;
-
-Sortify.init('test.less');
