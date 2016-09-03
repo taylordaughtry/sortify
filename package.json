@@ -1,0 +1,30 @@
+{
+  "name": "sortify",
+  "version": "1.0.2",
+  "description": "Check your LESS files for alphabetical order.",
+  "main": "sortify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taylordaughtry/sortify.git"
+  },
+  "keywords": [
+    "less",
+    "css",
+    "sortify",
+    "alphabetical",
+    "order",
+    "sort"
+  ],
+  "author": "Taylor Daughtry",
+  "license": "MIT",
+  "dependencies": {
+    "lex": "^1.7.9"
+  },
+  "bugs": {
+    "url": "https://github.com/taylordaughtry/sortify/issues"
+  },
+  "homepage": "https://github.com/taylordaughtry/sortify#readme"
+}
